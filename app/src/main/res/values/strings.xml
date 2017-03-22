@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GoogleSignIn</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="label_add_account">Step 01)POST add_service intent to Account Manager/Subscription Service.\n
+        We send relevant data like Scopes, UUID etc </string>
+    <string name="btn_post_add_service">POST Add Service</string>
+
+    <string name="label_get_auth_code">Step 02) Get Auth Code and POST to Server</string>
+    <string name="btn_get_auth_code">Get Auth Code</string>
+
+    <string name="label_remove_account">Step 03)POST remove_service intent to Account Manager/Subscription Service.\n
+        Revoke access/Un subscription and Delete account handled by AMS. </string>
+    <string name="btn_post_remove_service">POST Remove Service</string>
+</resources>
