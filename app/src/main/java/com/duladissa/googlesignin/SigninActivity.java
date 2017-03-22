@@ -1,8 +1,6 @@
 package com.duladissa.googlesignin;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -106,7 +104,7 @@ public class SigninActivity extends AppCompatActivity implements
                 // TODO: send code to server and exchange for access/refresh/ID tokens.
                 Controller.getInstance(this).getGoogleCallback(authCode, null);
             } else {
-                Controller.getInstance(this).getGoogleCallback(null, "User Cancelled");
+                Controller.getInstance(this).getGoogleCallback(null, "Error");
             }
         }
     }

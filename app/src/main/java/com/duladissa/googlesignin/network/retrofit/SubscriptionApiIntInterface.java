@@ -10,7 +10,6 @@ import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.QueryMap;
-import retrofit2.http.QueryName;
 
 /**
  * Created by duladissa on 22/3/17.

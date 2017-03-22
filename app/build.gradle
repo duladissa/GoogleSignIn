@@ -3,6 +3,16 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
+
+    signingConfigs {
+        development {
+            storeFile file("../debug.keystore")
+            keyAlias "androiddebugkey"
+            storePassword "android"
+            keyPassword "android"
+        }
+    }
+
     defaultConfig {
         applicationId "com.duladissa.googlesignin"
         minSdkVersion rootProject.ext.minSdkVersion
@@ -13,8 +23,15 @@ android {
     }
     buildTypes {
         release {
+            debuggable true
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        dev {
+            signingConfig signingConfigs.development
         }
     }
 }
