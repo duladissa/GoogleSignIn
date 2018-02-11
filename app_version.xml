@@ -1,7 +1,7 @@
 <AppUpdater>
   <update>
-    <latestVersion>2.3.2</latestVersion>
-    <latestVersionCode>30</latestVersionCode>
+    <latestVersion>1.2.2</latestVersion>
+    <latestVersionCode>23</latestVersionCode>
     <url>https://play.google.com/store/apps/details?id=cash.cointracker.cointracker</url>
   </update>
 </AppUpdater>
